@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body class="bg-lime-300">
+
+  <div style="font-family: 'Press Start 2P', cursive;" class="shadow-xl">
+    <form action="" class="flex flex-col w-1/4 mx-auto my-[300px] gap-3" action="">
+        <h1 class="text-center text-2xl" style="color: rgb(255, 0, 0);" >Form Login App</h1>
+        <input class="username p-" type="text" placeholder="Username">
+        <input class="password p-" type="password" name="" id="" placeholder="Password">
+        <button class="btn bg-white text-sky-500 p-2 rounded-md "><a href="soal.html" size>Login</a></button>
+    </form>
+  </div>
+      <script>
+        
+        const username = document.querySelector('.username')
+        const password = document.querySelector('.password')
+        const btn = document.querySelector('button')
+
+        let x = 2
+        btn.addEventListener('click', function(e){
+          e.preventDefault()
+
+          if(username.value == "fatwa"){
+            if(password.value == "imakom"){
+            alert('login kamu berhasil')
+            location.href = "soal.html"
+          }else{
+            alert('password atau username kamu salah nih !')
+          }
+        }else{
+          alert('password atau username kamu salah nih !')
+        }
+
+        })
+
+      </script>
+</body>
+</html>
